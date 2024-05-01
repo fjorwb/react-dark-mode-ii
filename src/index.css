@@ -1,45 +1,38 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+
   line-height: 1.5;
   font-weight: 400;
-
-  /* color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; */
 
   --body_background: #fff;
   --body_color: #000;
   --body_link: navy;
+  --primary-color: #302ae6;
+  --secondary-color: #536390;
+  --font-color: #424242;
+  --bg-color: #ffffff;
+  --heading-color: #292922;
 
   [data-theme='dark'] {
     --body_background: #282c34;
     --body_color: #fff000;
     --body_link: aqua;
-  }
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  .for_light_theme {
-    --primary-color: #302ae6;
-    --secondary-color: #536390;
-    --font-color: #424242;
-    --bg-color: #ffffff;
-    --heading-color: #292922;
-  }
-  .for_dark_theme {
     --primary-color: #9a97f3;
     --secondary-color: #818cab;
     --font-color: #e1e1ff;
     --bg-color: #161625;
     --heading-color: #818cab;
   }
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
-  transition: all 0.25s ease-in-out;
+  transition: background 0.25s ease-in-out 0.15s;
 }
 
 a {
@@ -54,7 +47,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
 }
